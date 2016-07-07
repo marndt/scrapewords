@@ -24,6 +24,7 @@ def is_valid(word):
 def scrape_source(source_url):
     source = {
         'source': source_url,
+        'source_domain': '',
         'h1': [],
         'h2': [],
         'h3': [],
@@ -31,8 +32,16 @@ def scrape_source(source_url):
         'h5': [],
         'h6': [],
         'other': [],
-        'a': {},
+        'a': [],
     }
+
+    try:
+        net_loc = urlparse.urlparse(source_url).netloc
+    except ValueError:
+        pass
+    else:
+        source_domain = '.'.join(net_loc.split('.')[-2:])
+        source['source_domain'] = source_domain
 
     try:
         r = requests.get(source_url, timeout=5)
@@ -78,12 +87,6 @@ def scrape_source(source_url):
         url_path = urlparse.urlparse(el['href']).path
         base_domain = '.'.join(netloc.split('.')[-2:])
 
-        if base_domain not in source['a']:
-            source['a'][base_domain] = {}
-
-        if netloc not in source['a'][base_domain]:
-            source['a'][base_domain][netloc] = []
-
         anchortext = []
         # Only using the first 10 words in an <a>
         for word in " ".join(el.stripped_strings).split()[:10]:
@@ -101,7 +104,9 @@ def scrape_source(source_url):
 
         linkwords = [word for word in re.findall(r"\w+", url_path) if is_valid(word)]
 
-        source['a'][base_domain][netloc].append({
+        source['a'].append({
+            'domain': base_domain,
+            'location': netloc,
             'linkwords': linkwords,
             'anchortext': anchortext,
         })
