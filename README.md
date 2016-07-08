@@ -20,6 +20,7 @@ http://nurse.org/
 [  
     {  
         "source":"http://google.com/",
+        "source_domain":"google.com",
         "h1":[  
 
         ],
@@ -68,126 +69,42 @@ http://nurse.org/
             "Privacy",
             "Terms"
         ],
-        "a":{  
-            "youtube.com":{  
-                "www.youtube.com":[  
-                    {  
-                        "linkwords":[  
+        "a":[
+            {
+                "domain":"http://www.youtube.com",
+                "source_domain":"youtube.com",
+                "linkwords":[  
 
-                        ],
-                        "anchortext":[  
-                            "YouTube"
-                        ]
-                    }
+                ],
+                "anchortext": [
+
                 ]
             },
-            "google.com":{  
-                "news.google.com":[  
-                    {  
-                        "linkwords":[  
-                            "nwshp"
-                        ],
-                        "anchortext":[  
-                            "News"
-                        ]
-                    }
-                ],
-                "www.google.com":[  
-                    {  
-                        "linkwords":[  
-                            "imghp"
-                        ],
-                        "anchortext":[  
-                            "Images"
-                        ]
-                    },
-                    {  
-                        "linkwords":[  
-                            "intl",
-                            "en",
-                            "options"
-                        ],
-                        "anchortext":[  
-                            "More"
-                        ]
-                    },
-                    {  
-                        "linkwords":[  
-                            "history",
-                            "optout"
-                        ],
-                        "anchortext":[  
-                            "Web",
-                            "History"
-                        ]
-                    }
-                ],
-                "drive.google.com":[  
-                    {  
-                        "linkwords":[  
+            {
+                "domain":"http://news.google.com",
+                "source_domain":"google.com",
+                "linkwords":[  
 
-                        ],
-                        "anchortext":[  
-                            "Drive"
-                        ]
-                    }
                 ],
-                "play.google.com":[  
-                    {  
-                        "linkwords":[  
+                "anchortext": [
 
-                        ],
-                        "anchortext":[  
-                            "Play"
-                        ]
-                    }
-                ],
-                "plus.google.com":[  
-                    {  
-                        "linkwords":[  
+                ]
+            },
+            {
+                "domain":"http://drive.google.com",
+                "source_domain":"google.com",
+                "linkwords":[  
 
-                        ],
-                        "anchortext":[  
-                            "+Google"
-                        ]
-                    }
                 ],
-                "mail.google.com":[  
-                    {  
-                        "linkwords":[  
-                            "mail"
-                        ],
-                        "anchortext":[  
-                            "Gmail"
-                        ]
-                    }
-                ],
-                "accounts.google.com":[  
-                    {  
-                        "linkwords":[  
-                            "ServiceLogin"
-                        ],
-                        "anchortext":[  
-                            "Sign",
-                            "in"
-                        ]
-                    }
-                ],
-                "maps.google.com":[  
-                    {  
-                        "linkwords":[  
-                            "maps"
-                        ],
-                        "anchortext":[  
-                            "Maps"
-                        ]
-                    }
+                "anchortext": [
+
                 ]
             }
-        }
+        ]
     },
-    {  
-        "source":"http://nurse.org/",
+    {
+        "source":"http://www.nurse.org/",
+        "source_domain":"nurse.org",
         "h1":[  
 
         ],
@@ -443,7 +360,7 @@ http://nurse.org/
             "the",
             "funniest",
             "things",
-            "you\'ve",
+            "you/'ve",
             "ever",
             "heard",
             "a",
@@ -467,7 +384,7 @@ http://nurse.org/
             "In",
             "Healthcare",
             "You",
-            "Won\'t",
+            "Won/'t",
             "Want",
             "to",
             "Miss",
@@ -480,7 +397,7 @@ http://nurse.org/
             "you",
             "heard",
             "of",
-            "He\'s",
+            "He/'s",
             "a",
             "physician",
             "who",
@@ -496,7 +413,7 @@ http://nurse.org/
             "songs",
             "are",
             "great",
-            "We\'ve",
+            "We/'ve",
             "collected",
             "a",
             "couple",
@@ -524,114 +441,38 @@ http://nurse.org/
             "Inc",
             "Nursing"
         ],
-        "a":{  
-            "reddit.com":{  
-                "www.reddit.com":[  
-                    {  
-                        "linkwords":[  
-                            "user",
-                            "churizurd"
-                        ],
-                        "anchortext":[  
-                            "churizurd"
-                        ]
-                    }
-                ]
-            },
-            "youtube.com":{  
-                "www.youtube.com":[  
-                    {  
-                        "linkwords":[  
-                            "user",
-                            "ZDoggMD",
-                            "about"
-                        ],
-                        "anchortext":[  
-                            "ZDoggMD"
-                        ]
-                    }
-                ]
-            },
-            "google.com":{  
-                "plus.google.com":[  
-                    {  
-                        "linkwords":[  
-                            "u",
-                            "NurseOrg123",
-                            "posts"
-                        ],
-                        "anchortext":[  
+        "a":[
+            {
+                "domain":"http://www.youtube.com",
+                "source_domain":"youtube.com",
+                "linkwords":[  
 
-                        ]
-                    }
-                ]
-            },
-            "twitter.com":{  
-                "twitter.com":[  
-                    {  
-                        "linkwords":[  
-                            "NurseDotOrg"
-                        ],
-                        "anchortext":[  
+                ],
+                "anchortext": [
 
-                        ]
-                    }
                 ]
             },
-            "facebook.com":{  
-                "www.facebook.com":[  
-                    {  
-                        "linkwords":[  
-                            "nursedotorg"
-                        ],
-                        "anchortext":[  
+            {
+                "domain":"http://news.google.com",
+                "source_domain":"google.com",
+                "linkwords":[  
 
-                        ]
-                    }
-                ]
-            },
-            "linkedin.com":{  
-                "www.linkedin.com":[  
-                    {  
-                        "linkwords":[  
-                            "company",
-                            "nurse",
-                            "org"
-                        ],
-                        "anchortext":[  
+                ],
+                "anchortext": [
 
-                        ]
-                    }
                 ]
             },
-            "nurse.org":{  
-                "nurse.org":[  
-                    {  
-                        "linkwords":[  
-                            "orgs",
-                            "shtml"
-                        ],
-                        "anchortext":[  
-                            "Nursing",
-                            "Organization"
-                        ]
-                    }
-                ]
-            },
-            "travelnursing.org":{  
-                "www.travelnursing.org":[  
-                    {  
-                        "linkwords":[  
+            {
+                "domain":"http://drive.google.com",
+                "source_domain":"google.com",
+                "linkwords":[  
 
-                        ],
-                        "anchortext":[  
-                            "Travel",
-                            "Nursing"
-                        ]
-                    }
+                ],
+                "anchortext": [
+
                 ]
             }
-        }
+        ]
     }
 ]
 ```
